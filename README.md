@@ -8,17 +8,17 @@ This repository has the aim storing all artefacts (image dataset) used in the re
 
 ## Authors
 
-- Rubens de Castro Pereira ^a,b,c,e^
-- Díbio Leandro Borges ^d^
-- Murillo Lobo Jr. ^b^
-- Ricardo da Silva Torres ^e^
-- Hélio Pedrini ^a^
+- Rubens de Castro Pereira <sup>a,b,c,e</sup>
+- Díbio Leandro Borges <sup>d</sup>
+- Murillo Lobo Jr. <sup>b</sup>
+- Ricardo da Silva Torres <sup>e</sup>
+- Hélio Pedrini <sup>a</sup>
 
-^a^ Institute of Computing, University of Campinas, Campinas, 13083-852, SP, Brazil
-^b^ EMBRAPA Rice and Beans, GO-462, km 12, Santo Antônio de Goiás, 75375-000, GO, Brazil
-^c^ Institute of Informatics, Federal University of Goiás, Goiânia, 74690-900, GO, Brazil
-^d^ University of Brasília, Department of Computer Science, Brasília, 70910-900, DF, Brazil
-^e^ Artificial Intelligence Group, Wageningen University and Research, Droevendaalsesteeg 1, Wageningen, 6708PB, Netherlands
+<sup>a</sup> Institute of Computing, University of Campinas, Campinas, 13083-852, SP, Brazil
+<sup>b</sup> EMBRAPA Rice and Beans, GO-462, km 12, Santo Antônio de Goiás, 75375-000, GO, Brazil
+<sup>c</sup> Institute of Informatics, Federal University of Goiás, Goiânia, 74690-900, GO, Brazil
+<sup>d</sup> University of Brasília, Department of Computer Science, Brasília, 70910-900, DF, Brazil
+<sup>e</sup> Artificial Intelligence Group, Wageningen University and Research, Droevendaalsesteeg 1, Wageningen, 6708PB, Netherlands 
 
 ## Abstract
 
