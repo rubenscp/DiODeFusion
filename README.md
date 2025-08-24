@@ -28,7 +28,10 @@ This repository has the aim storing all artefacts (image dataset) used in the re
 
 The white mold caused by the soilborne pathogen *Sclerotinia sclerotiorum* affects hundreds of plant hosts around the world. Its early detection is important to leverage effective and timely responses that mitigate crop yield losses. This paper addresses the automatic detection of white mold based on computer vision methods. We introduce a Diversity-driven Object Detection Fusion framework, DiODeFusion, that leverages the complementary views provided by multiple detectors to improve prediction results. DiODeFusion relies on bounding-box-based diversity measures to determine the most promising detectors for use in fusion. Experiments were conducted on a recently created SWM dataset, considering the assessment of multiple diversity measures, detector selection approaches, and bounding-box fusion strategies. Experimental results show that DiODeFusion achieves gains of up to 2.0\% in terms of the F1 metric using only three detectors, compared to strong fusion baselines that employ all available detectors.
 
-## Weight Files
+## Artifcats
+
+- Weight Files
+- Code
 
 <!-- 
 Images dataset used in training [:bug:](https://github.com/rubenscp/Whiteflies_Dataset/tree/main/dataset_for_training)
