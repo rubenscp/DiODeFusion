@@ -31,7 +31,7 @@ The white mold caused by the soilborne pathogen *Sclerotinia sclerotiorum* affec
 ## Artifcats
 
 - Weight Files
- Source Code
+- Source Code
 
 <!-- 
 Images dataset used in training [:bug:](https://github.com/rubenscp/Whiteflies_Dataset/tree/main/dataset_for_training)
