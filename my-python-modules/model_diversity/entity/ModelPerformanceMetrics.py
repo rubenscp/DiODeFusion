@@ -8,7 +8,7 @@ import json
 
 # Importing python modules
 from common.manage_log import *
-from model_diversity.entity.ImagePerformanceMetrics import * 
+from model_diversity.entity.ImagePerformanceMetrics import *  
 
 # ###########################################
 # Constants

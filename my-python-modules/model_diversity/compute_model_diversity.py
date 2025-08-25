@@ -16,7 +16,7 @@ import os
 
 # Importing python modules
 from common.manage_log import *
-from common.utils import * 
+from common.utils import *  
 
 from model_diversity.entity.ModelPerformanceMetrics import * 
 from model_diversity.entity.ModelsDiversityMeasures import * 

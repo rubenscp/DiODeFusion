@@ -8,7 +8,7 @@ import os
 import json 
 import torch 
 import torchvision
-from torchvision.ops import * 
+from torchvision.ops import *  
 
 class ImageRelationshipMatrix:
     def __init__(self, image_name=None, ground_truths_image=None,

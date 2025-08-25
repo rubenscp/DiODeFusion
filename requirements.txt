@@ -8,3 +8,4 @@ torchvision
 adjustText
 scikit-learn
 openpyxl
+json 

@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from adjustText import adjust_text
 
 # Importing python modules
-from common.manage_log import *
+from common.manage_log import * 
 from model_diversity.entity.ModelsPairRelationshipMatrix import * 
 
 # ###########################################

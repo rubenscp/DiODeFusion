@@ -5,7 +5,7 @@
 # Importing python libraries 
 # import math
 import pandas as pd
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt 
 
 # Importing python modules
 from common.manage_log import *

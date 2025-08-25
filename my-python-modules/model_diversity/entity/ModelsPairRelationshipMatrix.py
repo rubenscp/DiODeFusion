@@ -9,7 +9,8 @@ import copy
 # Importing python modules
 from common.manage_log import *
 from model_diversity.entity.ImageRelationshipMatrix import * 
-import time
+import time   
+
 
 class ModelsPairRelationshipMatrix:
     def __init__(self, dataset_name=None, 

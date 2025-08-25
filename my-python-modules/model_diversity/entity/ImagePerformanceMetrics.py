@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 import torch 
 import torchvision
-from torchvision.ops import * 
+from torchvision.ops import *  
 
 # Importing python modules
 from common.manage_log import *
