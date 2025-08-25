@@ -38,4 +38,4 @@ The white mold caused by the soilborne pathogen *Sclerotinia sclerotiorum* affec
 Images dataset used in training [:bug:](https://github.com/rubenscp/Whiteflies_Dataset/tree/main/dataset_for_training)
 Images dataset used in whiteflies detection [:bug:](https://github.com/rubenscp/Whiteflies_Dataset/tree/main/dataset_for_detection_test)
 Images used in the paper [:arrow_right:](https://github.com/rubenscp/Whiteflies_Dataset/tree/main/images_of_the_paper)
---> 
+-->
