@@ -16,7 +16,7 @@ import os
 
 # Importing python modules
 from common.manage_log import *
-from common.utils import *  
+from common.utils import * 
 
 from model_diversity.entity.ModelPerformanceMetrics import * 
 from model_diversity.entity.ModelsDiversityMeasures import * 
@@ -79,6 +79,7 @@ def process_model_diversity_for_models_and_datasets(parameters):
         logging_info(f'precision: {models_diversity_measures.dataset_model_performance_metrics_dic[dataset_model].get_model_precision()}')
         logging_info(f'recall: {models_diversity_measures.dataset_model_performance_metrics_dic[dataset_model].get_model_recall()}')
         logging_info(f'f1-score: {models_diversity_measures.dataset_model_performance_metrics_dic[dataset_model].get_model_f1_score()}')                
+
 
     # processing object detection models by pairs 
     for i in range(0, len(od_models)):

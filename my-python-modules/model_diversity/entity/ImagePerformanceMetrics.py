@@ -3,11 +3,11 @@
 
 # Importing python libraries 
 import math                         
-import pandas as pd
+import pandas as pd 
 import numpy as np
 import torch 
 import torchvision
-from torchvision.ops import *  
+from torchvision.ops import * 
 
 # Importing python modules
 from common.manage_log import *
@@ -49,15 +49,20 @@ class ImagePerformanceMetrics:
 
     def compute_metrics(self):
 
+        show = False 
+        # if self.image_name == "MVI_6677.MP4#t=82.533333.jpg":
+        #     show = True
+
         # logging_info(f'Computing performance metrics: of the image: {self.image_name}')
         # logging_info(f'Dataset: {self.dataset_name}')
         # logging_info(f'Image: {self.image_name}')
 
-        # print(f'')
-        # print(f'Computing performance metrics: of the image: {self.image_name}')
-        # print(f'Dataset: {self.dataset_name}')
-        # print(f'Model: {self.model_name}')
-        # print(f'Image: {self.image_name}')
+        if show:
+            print(f'')
+            print(f'Computing performance metrics: of the image: {self.image_name}')
+            print(f'Dataset: {self.dataset_name}')
+            print(f'Model: {self.model_name}')
+            print(f'Image: {self.image_name}')
 
         # preparing confusion matrix of the image 
         self.confusion_matrix = np.zeros((self.number_of_classes + 2, self.number_of_classes + 2))
@@ -71,9 +76,6 @@ class ImagePerformanceMetrics:
         self.number_of_bounding_boxes_predicted_with_target = 0
         self.number_of_background_predictions = 0
         self.number_of_undetected_objects = 0
-
-        # logging_info(f'image ground_truths: {self.ground_truths}')
-        # logging_info(f'image predictions {self.predictions}')
 
         # preparing ground truths and predictions 
         ground_truths_boxes = self.ground_truths['boxes']
@@ -92,10 +94,10 @@ class ImagePerformanceMetrics:
         # initializing variables
         matched_gt = set()
 
-        # if self.image_name == "ds-2023-09-07-santa-helena-de-goias-go-fazenda-sete-ilhas-pivo-04-IMG_3868-bbox-1527539646.jpg":
-        #     print(f'self.image_name 1: {self.image_name}')
-        #     print(f'self.ground_truths 1: {self.ground_truths}')
-        #     print(f'self.predictions 1: {self.predictions}')                 
+        if show:
+            print(f'self.image_name 1: {self.image_name}')
+            print(f'self.ground_truths 1: {self.ground_truths}')
+            print(f'self.predictions 1: {self.predictions}')                 
         
         # computing iou of the model bbox and groudn truth bbox 
         for pred_ind, (p_bbox, p_label, p_score) in enumerate(zip(predictions_boxes, predictions_labels, predictions_scores)):
@@ -115,12 +117,14 @@ class ImagePerformanceMetrics:
                 # Both sets of boxes are expected to be in (x1, y1, x2, y2)
                 # evaluate IoU threshold and labels
                 iou = box_iou(tensor_p_bbox, tensor_gt_bbox).numpy()[0][0]    
-                # if self.image_name == "ds-2023-09-07-santa-helena-de-goias-go-fazenda-sete-ilhas-pivo-04-IMG_3868-bbox-1527539646.jpg":
-                #     print(f'IoU for {self.image_name}: {iou}')
-                #     print(f'self.iou_threshold: {self.iou_threshold}')
-                #     print(f'best_iou: {best_iou}')
-                #     print(f'Prediction: {p_bbox}, {p_label}, {p_score}')
-                #     print(f'Ground Truth: {t_box}, {t_label}')
+                if show:
+                    print(f'')
+                    print(f'IoU for {self.image_name}: {iou}')
+                    print(f'self.iou_threshold: {self.iou_threshold}')
+                    print(f'best_iou: {best_iou}')
+                    print(f'Prediction: {p_bbox}, {p_label}, {p_score}')
+                    print(f'Ground Truth: {t_box}, {t_label}')
+                    print(f'')
 
                 if iou >= self.iou_threshold and iou > best_iou:
                     best_iou = iou

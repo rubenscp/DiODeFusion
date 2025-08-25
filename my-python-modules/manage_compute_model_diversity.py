@@ -18,16 +18,11 @@ Command line:
 # Basic python and ML Libraries
 import os
 from datetime import datetime
-import shutil
-import copy
-import sys
 import argparse
 
 # Importing python modules
 from common.manage_log import *
 from common.tasks import Tasks
-from common.entity.ImageAnnotation import ImageAnnotation
-from common.entity.AnnotationsStatistic import AnnotationsStatistic
 
 # from model_diversity.compute_models_diversity import * 
 from model_diversity.compute_model_diversity import * 
